@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8D23F330-0C7E-42F0-8C8A-0EA2614AA0CE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>hotel</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AF4CB49042E3ACB609E99A9381DCF66B858FD8D5</key>
+		<string>github.com:saquibmian/cs3307-designpatterns.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>hotel/hotel/hotel.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AF4CB49042E3ACB609E99A9381DCF66B858FD8D5</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:saquibmian/cs3307-designpatterns.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AF4CB49042E3ACB609E99A9381DCF66B858FD8D5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AF4CB49042E3ACB609E99A9381DCF66B858FD8D5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cs3307-designpatterns</string>
+		</dict>
+	</array>
+</dict>
+</plist>
