@@ -40,7 +40,7 @@ public:
         LOG( "Getting all bases" );
         return _bases;
     }
-
+    
     virtual Base GetNextBase() {
         LOG( "Getting next base" );
         return *(_iterator++);
@@ -59,6 +59,10 @@ public:
 };
 
 class SequenceStreamer {
+private:
+    vector<Sequence>* _sequences;
+    vector<SequenceStreamer>* _readers;
+    Sequence _sequence;
 public:
     SequenceStreamer( vector<Sequence>* sequences ) {}
     SequenceStreamer( vector<SequenceStreamer>* readers ) {}
@@ -123,7 +127,7 @@ public:
         _regions->push_back( Region() );
         _regions->push_back( Region() );
         _regions->push_back( Region() );
-
+        
     }
     vector<Region>* GetRegions() const {
         LOG( "Getting all regions of genome" );
@@ -137,6 +141,8 @@ class Alignment {
 
 
 class SequenceReadEvent {
+private:
+    Sequence* _sequence;
 public:
     SequenceReadEvent() {};
     Sequence* GetSequence() {
@@ -219,6 +225,8 @@ public:
 class GenomeMapper {
 private:
     GenomeHandler* _mainHandler = NULL;
+    Genome* _referencedGenomeCached;
+    Alignment* _alignmentCached;
 public:
     GenomeMapper( vector<Genome>* genomes ) {
         LOG( "Initializing GenomeMapper" );
@@ -312,11 +320,11 @@ int main(int argc, const char * argv[]) {
     
     while( reader.CanRead() ) {
         SequenceReadEvent event = reader.ReadNext();
-
+        
         dispatcher.DispatchReadEvent( event );
         dispatcher.GetStatus();
     }
-
+    
     LOG( "Done!" );
     
     return 0;
